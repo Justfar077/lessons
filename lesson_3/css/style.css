@@ -1,6 +1,12 @@
 @import url(reset.css);
 
-header, main, footer{
+*{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header,
+main,
+footer{
 	margin: 0 auto;
 	max-width: 70%;
 }
@@ -52,7 +58,7 @@ font-weight: bold;
 	text-align: center;
 }
 
-.nav li{
+.nav > li{
 	margin: 10px 0;
 	font-size: 25px;
 	font-weight: 500;
@@ -63,11 +69,30 @@ font-weight: bold;
 	color: rgb(139, 4, 4);
 }
 
+.nav .futur{
+	color: red;
+}
+
 .paragraph p {
 	font-size: 25px;
 	line-height: 40px;
 	margin: 30px 0;
 }
+
+.paragraph p span {
+	font-style: italic;
+}
+
+.paragraph *{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.paragraph ~ p{
+	color: rgb(3, 129, 129);
+	font-size: 30px;
+}
+
+
 
 #secong a {
 	border-bottom: 2px solid rgb(139, 4, 4);
@@ -105,4 +130,11 @@ font-weight: bold;
 	font-weight: bold;
 	font-size: 30px;
 	padding-bottom: 50px;
+}
+
+.footer + p{
+	font-weight: bold;
+	text-align: center;
+	color: rgb(245, 57, 10);
+	font-size: 37px;
 }
