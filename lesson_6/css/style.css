@@ -1,0 +1,239 @@
+@import url(reset.css);
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.78; /* 25/14 */
+	color: #6C757D;
+}
+
+										/* header */
+.header {
+background: url(../img/img01.png) no-repeat;
+background-size: 100%;
+margin-bottom: 80px;
+padding-bottom: 125px;
+}
+
+.header-navigations {
+display: flex;
+justify-content: space-between;
+max-width: 1240px;
+margin: 0 auto 164px;
+padding-top: 36px;
+}
+
+.header-nav {
+display: flex;
+}
+
+.nav-link {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 2.08; /* 25/12 */
+	color: rgba(248, 249, 250, 0.5);
+	margin: 0 13px;
+}
+
+.header-nav span{
+	border-right: 1px solid rgba(229, 229, 229, 0.5);
+}
+
+.header-nav svg{
+	margin-top: 5px;
+}
+
+.header-text {
+	max-width: 520px;
+	margin: 0 auto;
+}
+
+.subtitle {
+	font-size: 12px;
+	line-height: 1.66; /* 20/12 */
+	text-align: center;
+	color: #E5E5E5;
+}
+
+.subtitle:first-child{
+	margin-bottom: 15px;
+}
+
+.subtitle span{
+	margin-right: 10px;
+}
+
+.header-title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6; /* 40/25 */
+	text-align: center;
+	color: #F8F9FA;
+	margin-bottom: 15px;
+}
+
+
+											/* main */
+
+
+.article-container {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+.article-text {
+	max-width: 816px;
+	margin: 0 auto 80px;
+}
+
+.article-title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6; /* 40/25 */
+	color: #212529;
+	max-width: 605px;
+	margin-bottom: 40px;
+}
+
+.article-title:nth-child(2){
+	max-width: 400px;
+}
+
+.date, .minute, .creator {
+	font-size: 12px;
+	line-height: 1.66;
+	margin-right: 25px;
+}
+
+.description {
+margin-bottom: 15px;
+}
+
+.creator {
+	font-weight: 700;
+}
+
+.secondimage{
+	max-width: 100%;
+	margin-bottom: 80px;
+}
+
+.article-paragraph {
+	margin-bottom: 30px;
+}
+
+.penultimate, .lasttitle{
+	margin-bottom: 100px;
+}
+
+.article-firstimage{
+	margin-bottom: 80px;
+	font-size: 0;
+}
+
+.article-secondimage{
+	margin-bottom: 100px;
+	font-size: 0;
+}
+
+.thirdimade, .sixthimage{
+	max-width: 100%;
+	margin-right: 30px;
+}
+
+.fifthimmage, .seventhimage{
+	max-width: 100%;
+}
+
+.fifthimmage{
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+
+									/* footer */
+
+
+.buttons {
+display: flex;
+justify-content: space-around;
+padding-bottom: 100px;
+}
+
+.buttonfirst,
+.buttonsecond,
+.buttonthird,
+.buttonfourth{
+padding: 10px 15px;
+width: 160px;
+}
+
+.buttonfirst{
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 4px 4px 8px 1px #212529;
+}
+
+.buttonsecond {
+	border: 2px dotted black;
+	border-radius: 20px;
+	box-shadow: -3px 3px 5px 2px #212529;
+}
+
+.buttonthird {
+	border: 2px dashed black;
+	border-radius: 30px;
+	box-shadow: 3px -3px 4px 0px #212529;
+}
+
+.buttonfourth {
+	border: 2px double black;
+	border-radius: 40px;
+	box-shadow: 0px 7px 7px 0px #21252c;
+}
+
+.buttons span{
+	font-weight: 500;
+	color: #212529;
+}
+
+.paragraph-test{
+	max-width: 600px;
+	margin: 0 auto 50px;
+	outline: 2px solid black;
+	padding: 15px;
+	border-radius: 20px;
+	color: black;
+	font-weight: normal;
+	opacity: 0.5;
+}
+
+.visible{
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.visible a{
+	padding: 20px 300px;
+	opacity: 0;
+	color: rgb(178, 12, 243);
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.visible a:hover{
+	opacity: 1;
+	transition: 1s;
+}
+
+.visible a:hover{
+	border: 3px solid rgb(178, 12, 243);
+	border-radius: 20px;
+	opacity: 0.8;
+	transition: 3s;
+}
+
+.paragraph-test1{
+	visibility: hidden;
+}
