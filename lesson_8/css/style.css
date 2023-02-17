@@ -351,9 +351,6 @@ transition: 0.8s;
 	color: indigo;
 }
 
-.click-me:hover{
-
-}
 
 .magic-container p:first-child{
 	font-weight: 700;
@@ -366,7 +363,7 @@ transition: 0.8s;
 
 .magic-container p:first-child:hover{
 	color: red;
-	scale: 1.5;
+	transform: scale(1.5);
 
 }
 
