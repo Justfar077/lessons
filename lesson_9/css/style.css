@@ -1,0 +1,97 @@
+@import url("reset.css");
+
+body{
+	font-family: 'Caveat', cursive;
+	text-align: center;
+	font-weight: bold;
+}
+
+.header-title{
+	font-size: 75px;
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+
+.title{
+	font-size: 45px;
+	margin-bottom: 40px;
+}
+
+.icons-container{
+	background-color: rgb(238, 235, 235);
+	text-align: center;
+	padding: 30px 0;
+	margin-bottom: 40px;
+}
+
+.icons-container img{
+	margin: 0 10px;
+}
+
+.logo-container,
+.icon-container,
+.contacts-container{
+	margin-bottom: 20px;
+}
+
+.first-img{
+	height: 750px;
+	background-image: url("../img/content_img/img1.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.group-contant:nth-child(3){
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.group-contant:not(:nth-child(2)){
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.group-contant:nth-child(6) div,
+.group-contant:nth-child(3) div{
+	width: 270px;
+}
+
+.group-contant:not(:last-child) img{
+	width: 100%;
+}
+
+
+.group-contant{
+	margin-bottom: 30px;
+}
+
+.design-container{
+	background-color: rgb(122, 79, 22);
+	padding: 30px 0;
+}
+
+.design{
+max-width: 900px;
+height: 400px;
+margin: 0 auto;
+background: url("../img/design_img/dotted1.svg") 10px 10px no-repeat,
+url("../img/design_img/dotted2.svg") 220px 10px no-repeat,
+url("../img/design_img/dotted3.svg") 300px 10px no-repeat,
+url("../img/design_img/dotted4.svg") 400px 10px no-repeat,
+url("../img/design_img/ellipse1.svg") 540px 10px no-repeat,
+url("../img/design_img/ellipse2.svg") 100% 100% no-repeat,
+url("../img/design_img/lines.svg") 10px 145px no-repeat,
+url("../img/design_img/oval.svg") 230px 160px no-repeat,
+url("../img/design_img/oval1.svg") 380px 160px no-repeat,
+url("../img/design_img/shape.svg") 510px 160px no-repeat,
+url("../img/design_img/vector1.svg") 100% 10px no-repeat,
+url("../img/design_img/vector2.svg") 80% 10px no-repeat;
+}
+
+.footer-text{
+	padding: 30px 0;
+	font-size: 30px;
+	line-height: 1.2;
+	background: rgb(16,57,235);
+background: linear-gradient(180deg, rgba(16,57,235,1) 0%, rgba(242,224,10,1) 100%);
+}
