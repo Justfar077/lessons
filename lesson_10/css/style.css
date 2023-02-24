@@ -35,6 +35,9 @@ body{
 	font-size: 18px;
 	line-height: 1.38;
 }
+[class*="__logo"] span{
+	color: #DDBEA9;
+}
 [class*="__title"]{
 	font-weight: 700;
 	font-size: 25px;
