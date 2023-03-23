@@ -56,13 +56,13 @@ body {
 .card {
 	display: flex;
 	flex-wrap: wrap;
-	column-gap: 30px;
 	row-gap: 45px;
 	padding: 44px 0 60px 0;
+	margin: 0 -15px 0 -15px;
 }
 .card__block {
-	max-width: 393px;
-	height: 500px;
+	flex: 0 1 33.333%;
+   padding: 0 15px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -71,6 +71,7 @@ body {
 	position: relative;
 	overflow: hidden;
 	border-radius: 3px;
+	margin-bottom: 30px;
 }
 .img__card {
 	width: 100%;
@@ -109,8 +110,9 @@ body {
 	line-height: 1.6; /* 40/25 */
 	color: #212529;
 }
-.text__line {
-	border: 1px solid #E5E5E5;
+.text__author{
+	padding-top: 15px;
+	border-top: 1px solid #E5E5E5;
 }
 .btn {
 	text-align: center;
