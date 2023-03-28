@@ -44,6 +44,8 @@ flex-wrap: wrap;
 }
 .nav__items {
 	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	gap: 74px;
 }
 .nav__link {
@@ -53,12 +55,12 @@ flex-wrap: wrap;
 }
 .nav__link:hover{
 	text-decoration: underline;
-
 }
 .active{
 	font-weight: 600;
 }
 .dedicated{
+	display: inline-block;
 	font-weight: 500;
 	font-size: 14px;
 	color: #FFFFFF;
@@ -70,7 +72,8 @@ flex-wrap: wrap;
 /* main */
 
 .page__headline {
-	padding: 100px 0;
+	padding-top: 100px;
+	margin-bottom: 100px;
 }
 .headline {
 	text-align: center;
@@ -145,8 +148,9 @@ flex-wrap: wrap;
 .gallery__image img{
 	max-width: 100%;
 }
-.big-item {
+.gallery__item_big {
 	flex: 0 0 100%;
+	padding: 0 15px;
 }
 
 .achivement__body {
@@ -204,3 +208,89 @@ flex-wrap: wrap;
    margin-bottom: 20px;
 }
 
+/* adaptive */
+
+
+@media (max-width: 1230px){
+	.section-achivement{
+		gap: 40px;
+	}
+}
+@media (max-width: 1149px){
+	.section-achivement__item{
+		flex: 0 1 742px;
+	}
+	.section-achivement__image {
+		flex: 0 1 100%;
+	}
+	.page__achivement{
+		max-width: 746px;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 992px){
+	.nav__items {
+		gap: 40px;
+	}
+}
+@media (max-width: 768px){
+	.nav {
+		flex-direction: column;
+}
+	.nav__items {
+		justify-content: center;
+	}
+	.nav__logo{
+		margin-bottom: 20px;
+	}
+	.page__headline {
+		padding-top: 40px;
+		margin-bottom: 40px;
+	}
+	.headline__title {
+		font-weight: 700;
+		font-size: 46px;
+		line-height: 1.2;
+		margin-bottom: 20px;
+	}
+	.headline__sub-title {
+		margin: 0 auto 30px;
+		max-width: 420px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.1;
+	}
+	.text-block {
+		display: block;
+	}
+	.text-content__title {
+		text-align: center;
+	}
+	.text-content__block {
+		padding-top: 0;
+		margin-bottom: 20px;
+	}
+	.text-content__text:not(:last-child) {
+		margin-bottom: 20px;
+		text-align: justify;
+	}
+	.page__desc {
+		margin: 0 -15px 32px;
+	}
+	.gallery {
+		flex-direction: column;
+		align-items: center;
+	}
+	.page__gallery {
+		margin: 0 -15px 40px;
+	}
+	.achivement__body {
+		padding-bottom: 50px;
+	}
+	.gallery__item_big{
+		max-width: 614px;
+	}
+	.section-achivement__text{
+		text-align: justify;
+	}
+}
