@@ -293,4 +293,9 @@ flex-wrap: wrap;
 	.section-achivement__text{
 		text-align: justify;
 	}
+	.text-content {
+		font-size: 16px;
+		line-height: 1.2;
+		color: #333333;
+}
 }
