@@ -74,6 +74,7 @@ body {
 	background: url(../img/arrow-1.svg);
 	width: 16px;
 	height: 8px;
+	pointer-events: none;
 }
 
 
@@ -324,6 +325,7 @@ body {
 	background: url(../img/arrow-2.svg);
 	width: 12px;
 	height: 7px;
+	pointer-events: none;
 }
 
 .shipping-methods-title {
@@ -450,4 +452,13 @@ body {
 
 .button__back:hover {
 	text-decoration: underline;
+}
+
+@media (max-width: 767.98px){
+	.main {
+		padding: 50px 0px;
+  }
+  .radio__item {
+	column-gap: 50px;
+}
 }
